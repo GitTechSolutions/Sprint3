@@ -1,0 +1,124 @@
+@media (min-width: 768px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    @media (min-width: 768px) {
+        html {
+            font-size: 17px;
+        }
+    }
+
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+
+    body {
+        margin-bottom: 60px;
+    }
+
+    body {
+        background-color: #313964
+    }
+
+    #img1 {
+        position: fixed;
+        border-radius: 50%;
+        height: 202px;
+        width: 221px;
+        object-fit: cover;
+        bottom: 0;
+        top: 200px;
+        left: 1330px;
+    }
+
+    #img2 {
+        position: fixed;
+        width: 579px;
+        height: 362px;
+        top: 325px;
+        bottom: 0px;
+        right: 1000px
+    }
+
+    div.forms {
+        position: fixed;
+        width: 776px;
+        height: 846px;
+        background-color: rgba(177, 179, 198, 0.30);
+        box-shadow: 28px 20px 23px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 5%;
+        bottom: 70px;
+        right: 930px;
+        z-index: -1;
+    }
+
+    #login-submit {
+        position: fixed;
+        bottom: 220px;
+        left: 2000px;
+        height: 1px;
+        width: 1px;
+        background-color: #313964;
+        border-color: #313964;
+    }
+
+    #icon1 {
+        position: fixed;
+        height: 30px;
+        width: 120px;
+        object-fit: contain;
+        background: #D9D9D9;
+        border-radius: 15px;
+        left: 1400px;
+
+    }
+
+    #email {
+        position: fixed;
+        bottom: 400px;
+        left: 1300px;
+        width: 300px;
+    }
+
+    #email01 {
+        position:fixed;
+        bottom: 430px;
+        left: 1300px;
+        font-size:25px; 
+        color:white;
+    }
+
+    #senha {
+        position: fixed;
+        bottom: 300px;
+        left: 1300px;
+        width: 300px;
+    }
+
+    #senha01 {
+        position: fixed;
+        bottom: 330px;
+        left: 1300px;
+        font-size: 25px;
+        color: white;
+    }
+
+    #label-01{
+        position: fixed;
+        top: 100px;
+        left: 385px;
+        font-size: 60px;
+        color:white;
+    }
+
+    #label-02 {
+        position: fixed;
+        bottom: 730px;
+        left: 400px;
+        font-size: 25px;
+        color:white;
+    }
+}

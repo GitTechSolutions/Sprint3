@@ -1,0 +1,43 @@
+﻿@model LoginModel
+@{
+    Layout = "_LayoutDeslogada";
+    ViewData["Title"] = "Login";
+}
+
+@if (TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        <button type="button" class="btn btn-danger btn-sm close-alert" data-bs-dismiss="alert" arial-label="Close">X</button>
+        @TempData["MensagemErro"]
+    </div>
+
+}
+
+<body>
+    <div>
+        <img src="~/css/perso.png" alt="Perso" id="img1" />
+        <img src="~/css/Tela Login.png" alt="Tela" id="img2" />
+
+        <div class="forms"></div>
+    </div>
+
+    <form asp-controller="Login" asp-action="Entrar" method="post">
+        <div>
+            <div class="mb-3">
+                <label id="email01" for="email" class="form-label">Email</label>
+                <input id="email" asp-for="Email" type="text" class="form-control" required />
+                @Html.ValidationMessageFor(x => x.Email)
+            </div>
+            <div class="mb-3">
+                <label id="senha01" for="senha" class="form-label">Senha</label>
+                <input id="senha" asp-for="Senha" type="password" class="form-control" required />
+                @Html.ValidationMessageFor(x => x.Senha)
+            </div>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary" id="login-submit"><img src="~/css/🦆 icon _login_.png" id="icon1" /></button>
+        </div>
+    </form>
+    <label id="label-01">FoneCompany</label>
+    <label id="label-02">Consulte Todos os Dados Aqui!</label>
+</body>
